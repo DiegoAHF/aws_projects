@@ -58,7 +58,7 @@ Inbound traffic is explicitly limited to required protocols/ports (SSH managemen
 ## 🚀 Deployment Advices
 
 1. Ensure there's an IAM user with sufficient permissions to manage VPC, EC2, S3 and SNS Services.
-2. The S3 bucket that stores the state file must be deployed before anything else to avoid sudden errors. Run terraform apply command under the file -> S3_Backend\main.tf
+2. The S3 bucket that stores the state file must be deployed before anything else to avoid sudden errors. Run terraform apply command under the file -> s3_backend_main.tf.
 3. Update personal IP and sns endpoint email under the variables.tf file. Refer to the variables "sg_ip" and "sns_endpoint".
 
 ## 🛠️ Tech Stack & Tools
